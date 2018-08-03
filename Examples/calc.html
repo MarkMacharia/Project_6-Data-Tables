@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Payment reminder</h2>
+
+<p>Just a polite reminder</p>
+
+<input type="text" name="amount" id="amount">
+
+<button type="button" onclick="myFunction()">View Invoice</button>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+function myFunction() {
+    var amount = document.getElementById("amount").value;
+    amount= parseInt(amount);
+	document.getElementById("demo1").innerHTML = amount;
+	//document.getElementById("demo1").innerHTML = "Engine,20,000";
+    document.getElementById("demo2").innerHTML = amount+amount;
+}
+</script>
+
+</body>
+</html>
